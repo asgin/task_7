@@ -6,7 +6,7 @@
 <body>
 <div>
     {% for i in table %}
-        <li>{{ ' ------- '.join(i) }}</li>
+        <li>{{ loop.index }}. {{ ' ------- '.join(i) }}</li>
     {% endfor %}
 </div>
 </body>
